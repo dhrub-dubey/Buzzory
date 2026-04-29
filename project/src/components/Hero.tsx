@@ -39,26 +39,26 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.05] tracking-tight text-gray-900 mb-6">
-            Turn clips into{' '}
+            Influencer marketing that{' '}
             <span className="relative inline-block">
               <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">
-                viral
+                actually
               </span>
               <svg className="absolute -bottom-1 left-0 w-full" height="8" viewBox="0 0 100 8" preserveAspectRatio="none">
                 <path d="M0,6 Q25,0 50,5 Q75,10 100,4" stroke="#F59E0B" strokeWidth="3" fill="none" strokeLinecap="round"/>
               </svg>
             </span>{' '}
-            content that grows.
+            makes you money.
           </h1>
 
           <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-md">
-            We transform raw footage into scroll-stopping short-form content — engineered for reach, retention, and real results.
+            Most influencer campaigns look good. Ours perform.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-wrap items-center gap-4 mb-10">
             <button className="group flex items-center gap-2 bg-black text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-gray-800 active:scale-95 transition-all shadow-lg shadow-black/10">
-              Start growing today
+              Book A Campaign
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
             <button className="flex items-center gap-2 text-gray-700 font-semibold px-6 py-3.5 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all">
@@ -106,11 +106,11 @@ export default function Hero() {
         <div ref={rightRef} className="reveal flex-1 flex items-center justify-center lg:justify-end relative">
           <div className="relative w-full max-w-xs">
             {/* Background card shadow/blur */}
-            <div className="absolute inset-0 scale-95 translate-y-6 translate-x-4 bg-gray-200 rounded-3xl blur-2xl opacity-50" />
+            <div className="absolute inset-0 scale-100 translate-y-8 translate-x-6 bg-gray-200 rounded-3xl blur-3xl opacity-40" />
 
             {/* Main video card */}
             <div className="relative z-10">
-              <VideoCard index={0} aspect="vertical" className="w-full max-w-[280px] mx-auto" />
+              <VideoCard index={0} aspect="vertical" className="w-full max-w-[340px] md:max-w-[380px] lg:max-w-[420px] mx-auto" />
             </div>
 
             {/* Floating stat cards */}

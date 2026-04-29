@@ -25,10 +25,12 @@ export default function FinalCTA() {
         <div ref={textRef} className="reveal mb-14">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-4 block">Get Started</span>
           <h2 className="text-4xl lg:text-6xl font-black text-white leading-tight mb-6">
-            Your profile growth is only<br />a few edits away.
+            Enough watching others go viral.<br />It's your turn.
           </h2>
           <p className="text-gray-400 text-lg max-w-lg mx-auto mb-8">
-            Join 500+ creators and brands who turned raw footage into revenue-driving content. Start today.
+          Most influencer campaigns fail because there’s no system behind them. 
+          We handle everything — creators, content, execution — so you get results, 
+          not just posts.  
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button className="group flex items-center gap-2 bg-white text-black font-bold px-8 py-4 rounded-xl hover:bg-gray-100 active:scale-95 transition-all shadow-xl shadow-white/10 text-sm">

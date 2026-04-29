@@ -80,9 +80,9 @@ export default function Testimonials() {
     <section className="bg-gray-50 py-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div ref={sectionRef} className="reveal text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-amber-500 mb-3 block">Testimonials</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-amber-500 mb-3 block">Influencers</span>
           <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-4">
-            What clients say after they got viral.
+          Not random influencers.<br />People who actually influence. 
           </h2>
           <p className="text-gray-500 text-lg max-w-lg mx-auto">
             Don't take our word for it — hear from creators and brands who've seen the results.

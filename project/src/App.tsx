@@ -6,7 +6,7 @@ import Testimonials from './components/Testimonials';
 import Process from './components/Process';
 import Pricing from './components/Pricing';
 import Reviews from './components/Reviews';
-import Blog from './components/Blog';
+import Services from './components/Services';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 
@@ -21,7 +21,7 @@ function App() {
       <Process />
       <Pricing />
       <Reviews />
-      <Blog />
+      <Services />
       <FinalCTA />
       <Footer />
     </div>
