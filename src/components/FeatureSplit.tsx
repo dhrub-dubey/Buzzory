@@ -43,13 +43,22 @@ export default function FeatureSplit() {
           <div ref={row1Right} className="reveal">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-500 mb-3 block">Content Strategy</span>
             <h2 className="text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-5">
-              Every edit is engineered for the algorithm.
+              People don’t watch ads anymore. They scroll past them.
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed mb-8">
-              We don't just cut clips — we build a content engine. Our team studies trends, hooks, and retention patterns to produce videos that don't just look great, they perform.
+              Your audience isn’t sitting in front of TV commercials. 
+              They’re on Instagram, YouTube, and Reels — trusting creators more than brands. <br /> <br />
+              Attention has moved. 
+              If your marketing hasn’t, you’re already behind. 
+              <br /> <br />
+              <strong className="text-gray-900 font-bold">
+                No attention = no sales. Simple math.
+              </strong>
+
+
             </p>
             <ul className="space-y-3">
-              {['Hook-first editing approach', 'Platform-native format (Reels, Shorts, TikTok)', 'Data-driven content calendar', 'Weekly performance reporting'].map((item) => (
+              {['People trust creators more than brand ads', 'Short-form content is where decisions are made', 'Traditional ads get skipped. Creator content gets watched', 'Your competitors are already in their feed'].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-gray-700 font-medium">
                   <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
                   {item}
@@ -65,13 +74,19 @@ export default function FeatureSplit() {
           <div ref={row2Left} className="reveal order-2 lg:order-1">
             <span className="text-xs font-bold uppercase tracking-widest text-sky-500 mb-3 block">Full Production</span>
             <h2 className="text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-5">
-              From raw footage to ready-to-post in 48 hrs.
+              No random influencers. No “bhai post kar dena” strategy.
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed mb-8">
-              Upload your raw clips and let our editors handle the rest — captions, sound design, color grading, and platform optimization all included.
+              Most brands try influencer marketing once…<br />
+              Pick random creators…<br />
+              Post content…<br />
+              And then say “it didn’t work.” <br /><br /> 
+              Of course it didn’t. <br /><br />
+              Influencer marketing without strategy is just expensive content.<br /><br />
+              <strong className="text-gray-900 font-bold">We fix that.</strong>
             </p>
             <ul className="space-y-3">
-              {['Unlimited revision rounds', 'Captions & subtitles in 10+ languages', 'Music licensing included', 'Direct upload to your accounts'].map((item) => (
+              {['Strategy-led content, not random posting', 'Creators selected with purpose', 'Performance-focused editing & optimization', 'Direct upload to your accounts'].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-gray-700 font-medium">
                   <CheckCircle2 className="w-5 h-5 text-sky-500 flex-shrink-0" />
                   {item}

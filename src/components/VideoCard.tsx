@@ -1,3 +1,4 @@
+import heroVideo from '../assets/hero.mp4';
 interface VideoCardProps {
   index?: number;
   className?: string;
@@ -42,22 +43,24 @@ export default function VideoCard({ index = 0, className = '', aspect = 'vertica
       style={{ transition: 'transform 0.35s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s ease' }}
     >
       {/* Background image acting as video poster */}
-      <img
-        src={poster}
-        alt="content preview"
+      <video
+        src={heroVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-        loading="lazy"
-      />
+      ></video>
 
       {/* Dark gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none" />
 
-      {/* Play icon */}
+      {/* Play icon
       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
           <div className="w-0 h-0 border-t-[7px] border-t-transparent border-l-[14px] border-l-white border-b-[7px] border-b-transparent ml-1" />
         </div>
-      </div>
+      </div> */}
 
       {/* Bottom stat */}
       <div className="absolute bottom-3 left-3 right-3">

@@ -4,8 +4,8 @@ import { Upload, Scissors, Sparkles, Rocket } from 'lucide-react';
 const steps = [
   {
     icon: Upload,
-    title: 'Upload your clips',
-    desc: 'Drop your raw footage into our secure portal. No edits needed — we handle everything from there.',
+    title: 'Set the direction',
+    desc: 'We define your goal, audience, and budget first — because influencer marketing without clarity turns into expensive content that doesn’t deliver results.',
     color: 'bg-amber-500',
     preview: (
       <div className="mt-4 bg-gray-800 rounded-xl p-3 flex items-center gap-3">
@@ -22,8 +22,8 @@ const steps = [
   },
   {
     icon: Scissors,
-    title: 'We craft the edit',
-    desc: 'Our editors cut, color grade, add captions, sound design, and optimize for hooks within 48 hours.',
+    title: 'Pick the right creators',
+    desc: 'We select creators based on relevance, content style, and performance — not just follower count — so your brand reaches the right audience.',
     color: 'bg-sky-500',
     preview: (
       <div className="mt-4 bg-gray-800 rounded-xl p-3 grid grid-cols-3 gap-1.5">
@@ -35,8 +35,8 @@ const steps = [
   },
   {
     icon: Sparkles,
-    title: 'Review & approve',
-    desc: 'Preview your content, leave feedback, and get unlimited revisions until it\'s exactly right.',
+    title: 'Plan & execute content',
+    desc: 'We build hooks, scripts, and content direction, then manage creators and execution — so everything runs smoothly without you chasing people. ',
     color: 'bg-green-500',
     preview: (
       <div className="mt-4 bg-gray-800 rounded-xl p-3 space-y-2">
@@ -51,8 +51,8 @@ const steps = [
   },
   {
     icon: Rocket,
-    title: 'Post & go viral',
-    desc: 'We schedule and publish at peak times, or hand you polished files ready to post whenever you want.',
+    title: 'Track, improve & scale',
+    desc: 'We track engagement, clicks, and conversions — then optimize and scale what works, so your campaigns don’t just run, they grow.',
     color: 'bg-rose-500',
     preview: (
       <div className="mt-4 bg-gray-800 rounded-xl p-3">
@@ -94,10 +94,12 @@ export default function Process() {
         <div ref={sectionRef} className="reveal text-center mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-3 block">Process</span>
           <h2 className="text-4xl lg:text-5xl font-black text-white mb-4 leading-tight">
-            Here's how we turn your raw clips<br />into viral content.
+            Here's how we turn  influencer campaigns<br />into actual revenue.
           </h2>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
-            A streamlined four-step process that gets you from raw footage to viral-ready content in record time.
+          Most influencer campaigns fail because there’s no structure. 
+          We follow a clear, step-by-step system — from creator selection to 
+          performance tracking — so nothing is left to luck.
           </p>
         </div>
 

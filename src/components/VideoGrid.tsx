@@ -24,10 +24,11 @@ export default function VideoGrid() {
         <div ref={sectionRef} className="reveal text-center mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-500 mb-3 block">Our Work</span>
           <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-4 leading-tight">
-            Where strategy meets<br />scroll-stopping content.
+            Proof that we don't just talk big.<br />We deliver bigger.
           </h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto">
-            Real results from real brands. Every clip in our portfolio was engineered to stop the scroll and drive action.
+          We don’t show “nice-looking content.” We show campaigns that drive attention, clicks, and 
+          conversions. 
           </p>
         </div>
 
