@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Zap, Menu, X } from 'lucide-react';
+import logo_text from '../assets/logo-text.png';
 
 const links = [
   { label: 'About', href: '#about' },
@@ -37,10 +38,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-          <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
-            <Zap className="w-4 h-4 text-white fill-white" />
-          </div>
-          <span className="font-bold text-lg tracking-tight text-gray-900">Influence</span>
+        <img
+            src={logo_text}
+            alt="Client Logo"
+            className="h-10 w-auto object-contain group-hover:scale-105 transition-transform"
+        />
         </a>
 
         {/* Desktop nav */}

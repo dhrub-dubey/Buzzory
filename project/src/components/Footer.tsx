@@ -1,3 +1,5 @@
+import logo_footer from '../assets/logo-footer.png';
+
 import { Zap, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const cols = [
@@ -22,12 +24,13 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                <Zap className="w-4 h-4 text-black fill-black" />
-              </div>
-              <span className="font-bold text-white text-lg tracking-tight">Influence</span>
-            </div>
+          <div className="mb-4">
+            <img
+              src={logo_footer}
+              alt="Client Logo"
+              className="h-10 w-auto object-contain"
+            />
+          </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-5 max-w-xs">
               We turn raw footage into viral short-form content that grows your audience and drives real results.
             </p>
