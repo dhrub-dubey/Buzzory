@@ -32,8 +32,17 @@ export default function VideoCard({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-2xl shadow-2xl bg-gray-900 ${aspectClass} ${tiltClass} ${className} group hover:shadow-3xl`}
-      style={{ transition: 'transform 0.35s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s ease' }}
+    className={`relative overflow-hidden rounded-2xl bg-gray-900 ${aspectClass} ${tiltClass} ${className} group`}
+    style={{
+      transition: 'transform 0.35s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s ease',
+      boxShadow: '0 35px 40px -20px rgba(0,0,0,0.45)',
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.boxShadow = '0 45px 50px -20px rgba(0,0,0,0.6)';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.boxShadow = '0 30px 60px rgba(0,0,0,0.45)';
+    }}
     >
       {/* Background image acting as video poster */}
       <video
@@ -42,6 +51,7 @@ export default function VideoCard({
         muted
         loop
         playsInline
+        preload="auto"
         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
       ></video>
 

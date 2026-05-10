@@ -1,6 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import VideoCard from './VideoCard';
+import vid7 from '../assets/our-work-vid7.mp4';
+import vid2 from '../assets/our-work-vid2.mp4';
+import vid5 from '../assets/our-work-vid5.mp4';
 
 export default function FinalCTA() {
   const textRef = useRef<HTMLDivElement>(null);
@@ -32,31 +35,67 @@ export default function FinalCTA() {
           We handle everything — creators, content, execution — so you get results, 
           not just posts.  
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
+          {/* <div className="flex flex-wrap items-center justify-center gap-4">
             <button className="group flex items-center gap-2 bg-white text-black font-bold px-8 py-4 rounded-xl hover:bg-gray-100 active:scale-95 transition-all shadow-xl shadow-white/10 text-sm">
               Get started today
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="text-gray-400 font-semibold px-8 py-4 rounded-xl border border-gray-700 hover:border-gray-500 hover:text-white transition-all text-sm">
+            <button 
+            onClick={() => {
+              const phoneNumber = "918170913636"; // replace with your WhatsApp number
+          
+              const message = encodeURIComponent(
+                "Hi! I want to book a demo call with your agency."
+              );
+          
+              window.open(
+                `https://wa.me/${phoneNumber}?text=${message}`,
+                "_blank"
+              );
+            }}
+            className="text-gray-400 font-semibold px-8 py-4 rounded-xl border border-gray-700 hover:border-gray-500 hover:text-white transition-all text-sm">
               Book a demo call
             </button>
           </div>
+        </div> */}
+        <div className="flex items-center justify-center">
+          <button
+            onClick={() => {
+              const phoneNumber = "918170913636";
+
+              const message = encodeURIComponent(
+                "Hi! I want to book a demo call with your agency."
+              );
+
+              window.open(
+                `https://wa.me/${phoneNumber}?text=${message}`,
+                "_blank"
+              );
+            }}
+            className="group flex items-center gap-2 bg-white text-black font-bold px-8 py-4 rounded-xl hover:bg-gray-100 active:scale-95 transition-all shadow-xl shadow-white/10 text-sm"
+          >
+            Book a demo call
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </button>
+        </div>
         </div>
 
         {/* Three video cards */}
         <div ref={videosRef} className="reveal">
-          <div className="flex items-end justify-center gap-4 lg:gap-6">
-            <div className="w-36 sm:w-44 lg:w-52 flex-shrink-0 card-tilt-left opacity-80">
-              <VideoCard index={3} aspect="vertical" />
-            </div>
-            <div className="w-40 sm:w-48 lg:w-56 flex-shrink-0 -mt-8 z-10">
-              <VideoCard index={4} aspect="vertical" />
-            </div>
-            <div className="w-36 sm:w-44 lg:w-52 flex-shrink-0 card-tilt-right opacity-80">
-              <VideoCard index={5} aspect="vertical" />
-            </div>
-          </div>
+        <div className="flex items-end justify-center gap-5 lg:gap-8">
+        <div className="w-44 sm:w-52 lg:w-64 flex-shrink-0 card-tilt-left opacity-80">
+          <VideoCard src={vid7} index={3} aspect="vertical" />
         </div>
+
+        <div className="w-48 sm:w-60 lg:w-72 flex-shrink-0 -mt-10 z-10">
+          <VideoCard src={vid2} index={4} aspect="vertical" />
+        </div>
+
+        <div className="w-44 sm:w-52 lg:w-64 flex-shrink-0 card-tilt-right opacity-80">
+          <VideoCard src={vid5} index={5} aspect="vertical" />
+        </div>
+      </div>
+      </div>
       </div>
     </section>
   );

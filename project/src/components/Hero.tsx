@@ -57,19 +57,45 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-wrap items-center gap-4 mb-10">
-            <button className="group flex items-center gap-2 bg-black text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-gray-800 active:scale-95 transition-all shadow-lg shadow-black/10">
+            <button 
+               onClick={() => {
+                const phoneNumber = "918170913636"; // replace with your WhatsApp number
+          
+                const message = encodeURIComponent(
+                  "Hi! I want to book a campaign with your agency."
+                );
+          
+                window.open(
+                  `https://wa.me/${phoneNumber}?text=${message}`,
+                  "_blank"
+                );
+              }}
+              className="group flex items-center gap-2 bg-black text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-gray-800 active:scale-95 transition-all shadow-lg shadow-black/10">
               Book A Campaign
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="flex items-center gap-2 text-gray-700 font-semibold px-6 py-3.5 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all">
+
+
+            <button 
+             onClick={() => {
+             const section = document.getElementById("our-work");
+
+             if (section) {
+               section.scrollIntoView({
+                 behavior: "smooth",
+                 block: "start",
+               });
+             }
+           }}
+            className="flex items-center gap-2 text-gray-700 font-semibold px-6 py-3.5 rounded-xl border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all">
               See our work
             </button>
           </div>
 
           {/* Social proof row */}
-          <div className="flex flex-wrap items-center gap-6">
+       {/*   <div className="flex flex-wrap items-center gap-6">
             {/* Stars */}
-            <div className="flex flex-col gap-1">
+           {/* <div className="flex flex-col gap-1">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
@@ -99,18 +125,23 @@ export default function Hero() {
               <TrendingUp className="w-4 h-4 text-green-500" />
               2.1B+ total views delivered
             </div>
-          </div>
-        </div>
+          </div> */}
+          
+        </div> 
 
         {/* Right — video reel */}
         <div ref={rightRef} className="reveal flex-1 flex items-center justify-center lg:justify-end relative">
-          <div className="relative w-full max-w-xs">
+            <div className="relative w-full max-w-[360px] md:max-w-[400px] lg:max-w-[440px]">
             {/* Background card shadow/blur */}
-            <div className="absolute inset-0 scale-100 translate-y-8 translate-x-6 bg-gray-200 rounded-3xl blur-3xl opacity-40" />
+            {/* <div className="absolute inset-0 scale-[1.01] translate-y-6 rounded-[3.5rem] bg-black/10 blur-3xl opacity-15" /> */}
 
             {/* Main video card */}
-            <div className="relative z-10">
-              <VideoCard index={0} aspect="vertical" className="w-full max-w-[340px] md:max-w-[380px] lg:max-w-[420px] mx-auto" />
+            <div className="relative z-10 rounded-[3.5rem] py-3.5">
+            <VideoCard
+              index={0}
+              aspect="vertical"
+              className="w-full max-w-[340px] md:max-w-[380px] lg:max-w-[420px] mx-auto !rounded-[3.5rem]"
+            />
             </div>
 
             {/* Floating stat cards */}

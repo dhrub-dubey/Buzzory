@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Check, Rocket, Video, Star } from 'lucide-react';
+import { Check, Rocket, Video, UserRound  } from 'lucide-react';
 
 const services = [
   {
@@ -31,7 +31,7 @@ const services = [
     color: 'bg-sky-500',
   },
   {
-    icon: Star,
+    icon: UserRound,
     name: 'Talent Management',
     tagline: 'Creators, managed like assets — not chaos.',
     desc: 'We handle creators professionally — brand deals, content direction, and growth — so both brands and influencers actually win.',
@@ -64,7 +64,7 @@ export default function Services() {
   }, []);
 
   return (
-    <section className="bg-white py-28">
+    <section id="services" className="bg-white py-28">
       <div className="max-w-7xl mx-auto px-6">
         <div ref={sectionRef} className="reveal text-center mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-rose-600 mb-3 block">Services</span>

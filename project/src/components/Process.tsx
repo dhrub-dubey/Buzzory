@@ -1,16 +1,16 @@
 import { useEffect, useRef } from 'react';
-import { Upload, Scissors, Sparkles, Rocket } from 'lucide-react';
+import { Crosshair, Scissors, Sparkles, Rocket } from 'lucide-react';
 
 const steps = [
   {
-    icon: Upload,
+    icon: Crosshair,
     title: 'Set the direction',
     desc: 'We define your goal, audience, and budget first — because influencer marketing without clarity turns into expensive content that doesn’t deliver results.',
     color: 'bg-amber-500',
     preview: (
       <div className="mt-4 bg-gray-800 rounded-xl p-3 flex items-center gap-3">
         <div className="w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-          <Upload className="w-4 h-4 text-amber-400" />
+          <Crosshair className="w-4 h-4 text-amber-400" />
         </div>
         <div className="flex-1">
           <div className="h-2 bg-amber-500 rounded-full mb-1.5 w-3/4" />
@@ -89,7 +89,7 @@ export default function Process() {
   }, []);
 
   return (
-    <section className="bg-gray-950 py-28">
+    <section id="process" className="bg-gray-950 py-28">
       <div className="max-w-7xl mx-auto px-6">
         <div ref={sectionRef} className="reveal text-center mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-3 block">Process</span>

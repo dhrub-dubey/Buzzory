@@ -104,7 +104,7 @@ export default function VideoGrid() {
   };
 
   return (
-    <section className="bg-white py-28 overflow-hidden">
+    <section id="our-work" className="bg-white py-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}

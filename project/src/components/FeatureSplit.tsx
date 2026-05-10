@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import VideoCard from './VideoCard';
+import vid6 from '../assets/our-work-vid6.mp4';
+import vid4 from '../assets/our-work-vid4.mp4';
 
 function useRevealRef() {
   const ref = useRef<HTMLDivElement>(null);
@@ -30,12 +32,13 @@ export default function FeatureSplit() {
         {/* Row 1: videos left, text right */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: two overlapping video cards */}
-          <div ref={row1Left} className="reveal flex items-center justify-center relative h-[460px]">
-            <div className="absolute left-0 top-8 w-[200px] z-10 card-tilt-left">
-              <VideoCard index={1} aspect="vertical" />
+          <div ref={row1Left} className="reveal flex items-center justify-center relative h-[560px]">
+            <div className="absolute left-[-10px] top-17.7 w-[250px] lg:w-[280px] z-10 card-tilt-left">
+              <VideoCard src={vid6} index={1} aspect="vertical" />
             </div>
-            <div className="absolute right-0 bottom-8 w-[200px] z-20 card-tilt-right">
-              <VideoCard index={2} aspect="vertical" />
+
+            <div className="absolute right-[-10px] top-17.7 w-[250px] lg:w-[280px] z-20 card-tilt-right">
+              <VideoCard src={vid4} index={2} aspect="vertical" />
             </div>
           </div>
 
