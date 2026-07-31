@@ -1,4 +1,4 @@
-import { ArrowRight, Star, TrendingUp, Users } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import VideoCard from './VideoCard';
 
