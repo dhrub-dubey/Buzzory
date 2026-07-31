@@ -32,7 +32,7 @@ export default function ClientTestimonials() {
   return (
     <section className="overflow-hidden bg-white py-14 sm:py-16">
       <div className="mx-auto max-w-7xl px-6">
-        <p className="mb-9 text-center text-xs font-bold uppercase tracking-[0.18em] text-gray-700 sm:mb-11 sm:text-sm">
+        <p className="mb-9 text-center text-xs font-bold uppercase tracking-[0.18em] text-[#FF9500] sm:mb-11 sm:text-sm">
           Brands we have worked with
         </p>
       </div>
