@@ -31,9 +31,9 @@ function Logo({ logo }: { logo: (typeof clientLogos)[number] }) {
 export default function ClientTestimonials() {
   return (
     <section className="overflow-hidden bg-white py-14 sm:py-16">
-      <div className="mx-auto max-w-7xl px-6">
-        <p className="mb-9 text-center text-xs font-bold uppercase tracking-[0.18em] text-[#FF9500] sm:mb-11 sm:text-sm">
-          Brands we have worked with
+      <div className="mx-auto max-w-7xl px-6 text-center">
+        <p className="relative mb-9 inline-block text-xs font-bold uppercase tracking-[0.18em] text-[#FF9500] sm:mb-11 sm:text-sm after:absolute after:-bottom-3 after:left-1/2 after:h-[3px] after:w-[85%] after:-translate-x-1/2 after:rotate-[-1deg] after:rounded-full after:bg-[#FF9500]">
+                Brands we have worked with
         </p>
       </div>
 
