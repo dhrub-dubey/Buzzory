@@ -337,6 +337,18 @@ body {
 .campaign-title__streaks--right .campaign-streaklet--2 { right: -0.43em; top: 0.42em; height: 24px; transform: rotate(52deg); }
 .campaign-title__streaks--right .campaign-streaklet--3 { right: -0.37em; top: 0.76em; height: 18px; transform: rotate(78deg); }
 
+.campaign-title:hover .campaign-streaklet,
+.campaign-price:hover .campaign-streaklet,
+.campaign-drum:hover .campaign-streaklet {
+  animation: festiveSpark 650ms ease-in-out infinite alternate;
+}
+
+.campaign-title:hover .campaign-streaklet:nth-child(2n),
+.campaign-price:hover .campaign-streaklet:nth-child(2n),
+.campaign-drum:hover .campaign-streaklet:nth-child(2n) {
+  animation-delay: 110ms;
+}
+
 .campaign-subtitle {
   position: absolute;
   top: 39.4%;
