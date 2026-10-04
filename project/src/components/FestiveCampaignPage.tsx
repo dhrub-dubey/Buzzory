@@ -99,8 +99,10 @@ export default function FestiveCampaignPage() {
         <p className="campaign-subtitle">Get featured with <strong>3 Influencers</strong></p>
 
         <div className="campaign-price">
-          <span className="campaign-price__label">At just</span>
-          <span className="campaign-price__value">₹ 9,999</span>
+          <div className="campaign-price__card">
+            <span className="campaign-price__label">At just</span>
+            <span className="campaign-price__value">₹ 9,999</span>
+          </div>
           <span aria-hidden="true" className="campaign-price__streaks">
             <i className="campaign-streaklet campaign-streaklet--1" />
             <i className="campaign-streaklet campaign-streaklet--2" />
