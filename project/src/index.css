@@ -298,6 +298,11 @@ body {
   font-weight: 800;
   line-height: 1.04;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  transition: text-shadow 240ms ease;
+}
+
+.campaign-title:hover {
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
 }
 
 .campaign-title__line {
@@ -317,6 +322,11 @@ body {
 .campaign-title__curve {
   display: inline-flex;
   white-space: pre;
+  transition: transform 240ms ease;
+}
+
+.campaign-title:hover .campaign-title__curve {
+  transform: translateY(-5px) scale(1.025);
 }
 
 .campaign-title__glyph {
