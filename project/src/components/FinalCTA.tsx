@@ -42,7 +42,7 @@ export default function FinalCTA() {
             </button>
             <button 
             onClick={() => {
-              const phoneNumber = "918170913636"; // replace with your WhatsApp number
+              const phoneNumber = "916297337103"; // replace with your WhatsApp number
           
               const message = encodeURIComponent(
                 "Hi! I want to book a demo call with your agency."
@@ -61,7 +61,7 @@ export default function FinalCTA() {
         <div className="flex items-center justify-center">
           <button
             onClick={() => {
-              const phoneNumber = "918170913636";
+              const phoneNumber = "916297337103";
 
               const message = encodeURIComponent(
                 "Hi! I want to book a demo call with your agency."
