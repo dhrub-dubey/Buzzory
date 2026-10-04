@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Navbar from './Navbar';
 import campaignBackground from '../assets/campaign-background.jpeg';
@@ -52,6 +52,31 @@ function TitleStreaks({ side }: { side: 'left' | 'right' }) {
   );
 }
 
+function CurvedTitleText({ text }: { text: string }) {
+  const glyphs = Array.from(text);
+  const midpoint = (glyphs.length - 1) / 2;
+
+  return (
+    <span aria-hidden="true" className="campaign-title__curve">
+      {glyphs.map((glyph, index) => {
+        const position = midpoint === 0 ? 0 : (index - midpoint) / midpoint;
+        const curve = -0.14 * (1 - position * position);
+        const tilt = position * 5.5;
+        const style = {
+          '--campaign-title-curve': `${curve}em`,
+          '--campaign-title-tilt': `${tilt}deg`,
+        } as CSSProperties;
+
+        return (
+          <span className="campaign-title__glyph" key={`${glyph}-${index}`} style={style}>
+            {glyph === ' ' ? '\u00a0' : glyph}
+          </span>
+        );
+      })}
+    </span>
+  );
+}
+
 function WhatsAppMark() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
@@ -84,15 +109,15 @@ export default function FestiveCampaignPage() {
       <section className="campaign-hero" aria-labelledby="campaign-title">
         <div aria-hidden="true" className="campaign-hero__art" style={{ backgroundImage: artwork }} />
 
-        <h1 id="campaign-title" className="campaign-title">
+        <h1 id="campaign-title" className="campaign-title" aria-label="Get Your Business Noticed This Pujo">
           <span className="campaign-title__line campaign-title__line--light">
-            <span className="campaign-title__text">Get Your<TitleStreaks side="left" /></span>
+            <span className="campaign-title__text"><CurvedTitleText text="Get Your" /><TitleStreaks side="left" /></span>
           </span>
           <span className="campaign-title__line campaign-title__line--gold">
-            <span className="campaign-title__text">Business Noticed</span>
+            <span className="campaign-title__text"><CurvedTitleText text="Business Noticed" /></span>
           </span>
           <span className="campaign-title__line campaign-title__line--light">
-            <span className="campaign-title__text">This Pujo<TitleStreaks side="right" /></span>
+            <span className="campaign-title__text"><CurvedTitleText text="This Pujo" /><TitleStreaks side="right" /></span>
           </span>
         </h1>
 

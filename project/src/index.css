@@ -293,9 +293,9 @@ body {
   margin: 0;
   transform: translateX(-50%);
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Baloo 2', 'Inter', sans-serif;
   font-size: 5rem;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.04;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
@@ -312,6 +312,17 @@ body {
 .campaign-title__text {
   position: relative;
   display: inline-block;
+}
+
+.campaign-title__curve {
+  display: inline-flex;
+  white-space: pre;
+}
+
+.campaign-title__glyph {
+  display: inline-block;
+  transform: translateY(var(--campaign-title-curve)) rotate(var(--campaign-title-tilt));
+  transform-origin: center;
 }
 
 .campaign-title__streaks {
