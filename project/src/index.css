@@ -320,8 +320,7 @@ body {
   pointer-events: none;
 }
 
-.campaign-title__streaks i,
-.campaign-price__streaks i {
+.campaign-streaklet {
   position: absolute;
   display: block;
   width: 8px;
@@ -331,12 +330,12 @@ body {
   transform-origin: center bottom;
 }
 
-.campaign-title__streaks--left i:nth-child(1) { left: -0.23em; top: 0.05em; height: 34px; transform: rotate(-22deg); }
-.campaign-title__streaks--left i:nth-child(2) { left: -0.43em; top: 0.42em; height: 24px; transform: rotate(-52deg); }
-.campaign-title__streaks--left i:nth-child(3) { left: -0.37em; top: 0.76em; height: 18px; transform: rotate(-78deg); }
-.campaign-title__streaks--right i:nth-child(1) { right: -0.23em; top: 0.05em; height: 34px; transform: rotate(22deg); }
-.campaign-title__streaks--right i:nth-child(2) { right: -0.43em; top: 0.42em; height: 24px; transform: rotate(52deg); }
-.campaign-title__streaks--right i:nth-child(3) { right: -0.37em; top: 0.76em; height: 18px; transform: rotate(78deg); }
+.campaign-title__streaks--left .campaign-streaklet--1 { left: -0.23em; top: 0.05em; height: 34px; transform: rotate(-22deg); }
+.campaign-title__streaks--left .campaign-streaklet--2 { left: -0.43em; top: 0.42em; height: 24px; transform: rotate(-52deg); }
+.campaign-title__streaks--left .campaign-streaklet--3 { left: -0.37em; top: 0.76em; height: 18px; transform: rotate(-78deg); }
+.campaign-title__streaks--right .campaign-streaklet--1 { right: -0.23em; top: 0.05em; height: 34px; transform: rotate(22deg); }
+.campaign-title__streaks--right .campaign-streaklet--2 { right: -0.43em; top: 0.42em; height: 24px; transform: rotate(52deg); }
+.campaign-title__streaks--right .campaign-streaklet--3 { right: -0.37em; top: 0.76em; height: 18px; transform: rotate(78deg); }
 
 .campaign-subtitle {
   position: absolute;
@@ -391,13 +390,13 @@ body {
 }
 
 .campaign-price__streaks { position: absolute; inset: 0; pointer-events: none; }
-.campaign-price__streaks i { transform-origin: center; }
-.campaign-price__streaks i:nth-child(1) { left: -33px; top: 16px; height: 25px; transform: rotate(42deg); }
-.campaign-price__streaks i:nth-child(2) { left: -36px; top: 37px; height: 23px; transform: rotate(82deg); }
-.campaign-price__streaks i:nth-child(3) { left: -33px; top: 56px; height: 20px; transform: rotate(42deg); }
-.campaign-price__streaks i:nth-child(4) { right: -33px; top: 16px; height: 25px; transform: rotate(-42deg); }
-.campaign-price__streaks i:nth-child(5) { right: -36px; top: 37px; height: 23px; transform: rotate(-82deg); }
-.campaign-price__streaks i:nth-child(6) { right: -33px; top: 56px; height: 20px; transform: rotate(-42deg); }
+.campaign-price__streaks .campaign-streaklet { transform-origin: center; }
+.campaign-price__streaks .campaign-streaklet--1 { left: -33px; top: 16px; height: 25px; transform: rotate(-42deg); }
+.campaign-price__streaks .campaign-streaklet--2 { left: -36px; top: 37px; height: 23px; transform: rotate(82deg); }
+.campaign-price__streaks .campaign-streaklet--3 { left: -33px; top: 56px; height: 20px; transform: rotate(42deg); }
+.campaign-price__streaks .campaign-streaklet--4 { right: -33px; top: 16px; height: 25px; transform: rotate(42deg); }
+.campaign-price__streaks .campaign-streaklet--5 { right: -36px; top: 37px; height: 23px; transform: rotate(-82deg); }
+.campaign-price__streaks .campaign-streaklet--6 { right: -33px; top: 56px; height: 20px; transform: rotate(-42deg); }
 
 .campaign-countdown {
   position: absolute;
@@ -474,7 +473,7 @@ body {
 
 .campaign-drum > img { display: block; width: 100%; height: auto; }
 .campaign-drum__streaks { position: absolute; inset: 0; pointer-events: none; }
-.campaign-drum__streaks i {
+.campaign-drum__streaks .campaign-streaklet {
   position: absolute;
   display: block;
   width: 5px;
@@ -483,12 +482,12 @@ body {
   background: #fff8ed;
   transform-origin: center;
 }
-.campaign-drum__streaks i:nth-child(1) { left: -9px; top: 57%; transform: rotate(42deg); }
-.campaign-drum__streaks i:nth-child(2) { left: -17px; top: 66%; height: 24px; transform: rotate(82deg); }
-.campaign-drum__streaks i:nth-child(3) { left: -10px; top: 75%; height: 18px; transform: rotate(-42deg); }
-.campaign-drum__streaks i:nth-child(4) { right: -9px; top: 57%; transform: rotate(-42deg); }
-.campaign-drum__streaks i:nth-child(5) { right: -17px; top: 66%; height: 24px; transform: rotate(-82deg); }
-.campaign-drum__streaks i:nth-child(6) { right: -10px; top: 75%; height: 18px; transform: rotate(42deg); }
+.campaign-drum__streaks .campaign-streaklet--1 { left: -9px; top: 34%; transform: rotate(-42deg); }
+.campaign-drum__streaks .campaign-streaklet--2 { left: -17px; top: 44%; height: 24px; transform: rotate(-82deg); }
+.campaign-drum__streaks .campaign-streaklet--3 { left: -10px; top: 54%; height: 18px; transform: rotate(42deg); }
+.campaign-drum__streaks .campaign-streaklet--4 { right: -9px; top: 34%; transform: rotate(42deg); }
+.campaign-drum__streaks .campaign-streaklet--5 { right: -17px; top: 44%; height: 24px; transform: rotate(82deg); }
+.campaign-drum__streaks .campaign-streaklet--6 { right: -10px; top: 54%; height: 18px; transform: rotate(-42deg); }
 
 .campaign-whatsapp {
   position: absolute;
@@ -531,9 +530,9 @@ body {
 @media (max-width: 767px) {
   .campaign-hero { height: max(100svh, 960px); min-height: 960px; }
   .campaign-title { top: 12%; font-size: 2.55rem; line-height: 1.12; }
-  .campaign-title__streaks i { width: 5px; height: 24px; }
-  .campaign-title__streaks i:nth-child(2) { height: 17px; }
-  .campaign-title__streaks i:nth-child(3) { height: 14px; }
+  .campaign-title__streaks .campaign-streaklet { width: 5px; height: 24px; }
+  .campaign-title__streaks .campaign-streaklet--2 { height: 17px; }
+  .campaign-title__streaks .campaign-streaklet--3 { height: 14px; }
   .campaign-subtitle { top: 35%; width: 100%; padding: 0 12px; font-size: 1.12rem; }
   .campaign-price { top: 41%; width: min(82%, 330px); height: 104px; border-radius: 30px; }
   .campaign-price__value { font-size: 3.25rem; }

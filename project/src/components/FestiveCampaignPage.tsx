@@ -45,7 +45,9 @@ function Countdown() {
 function TitleStreaks({ side }: { side: 'left' | 'right' }) {
   return (
     <span aria-hidden="true" className={`campaign-title__streaks campaign-title__streaks--${side}`}>
-      <i /><i /><i />
+      <i className="campaign-streaklet campaign-streaklet--1" />
+      <i className="campaign-streaklet campaign-streaklet--2" />
+      <i className="campaign-streaklet campaign-streaklet--3" />
     </span>
   );
 }
@@ -100,7 +102,12 @@ export default function FestiveCampaignPage() {
           <span className="campaign-price__label">At just</span>
           <span className="campaign-price__value">₹ 9,999</span>
           <span aria-hidden="true" className="campaign-price__streaks">
-            <i /><i /><i /><i /><i /><i />
+            <i className="campaign-streaklet campaign-streaklet--1" />
+            <i className="campaign-streaklet campaign-streaklet--2" />
+            <i className="campaign-streaklet campaign-streaklet--3" />
+            <i className="campaign-streaklet campaign-streaklet--4" />
+            <i className="campaign-streaklet campaign-streaklet--5" />
+            <i className="campaign-streaklet campaign-streaklet--6" />
           </span>
         </div>
 
@@ -108,7 +115,12 @@ export default function FestiveCampaignPage() {
         <div className="campaign-drum" aria-hidden="true">
           <img src={drumScene} alt="" onMouseEnter={playDhak} onMouseLeave={stopDhak} />
           <span className="campaign-drum__streaks">
-            <i /><i /><i /><i /><i /><i />
+            <i className="campaign-streaklet campaign-streaklet--1" />
+            <i className="campaign-streaklet campaign-streaklet--2" />
+            <i className="campaign-streaklet campaign-streaklet--3" />
+            <i className="campaign-streaklet campaign-streaklet--4" />
+            <i className="campaign-streaklet campaign-streaklet--5" />
+            <i className="campaign-streaklet campaign-streaklet--6" />
           </span>
         </div>
         <audio ref={dhakAudio} src={dhakSound} preload="auto" loop />
