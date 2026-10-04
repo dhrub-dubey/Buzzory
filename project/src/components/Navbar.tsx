@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import logo_text from '../assets/logo-text.png';
-import campaignLogo from '../assets/logo-footer.png';
+import campaignLogo from '../assets/logo-navbar.png';
 
 const links = [
   { label: 'About', href: '#about' },
